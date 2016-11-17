@@ -1,6 +1,6 @@
 Name:           mpv
 Version:        0.17.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Movie player playing most video formats and DVDs
 License:        GPLv2+
 URL:            http://%{name}.io/
@@ -148,6 +148,9 @@ gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor &>/dev/null || :
 %{_libdir}/pkgconfig/mpv.pc
 
 %changelog
+* Thu Nov 17 2016 Adrian Reber <adrian@lisas.de> - 0.17.0-3
+- Rebuilt for libcdio-0.94
+
 * Mon May 02 2016 Adrian Reber <adrian@lisas.de> - 0.17.0-2
 - added BR perl(Encode) to build on F24
 
